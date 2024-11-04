@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="calculator.png" type="image/x-icon">
+  <title>Binary Convertor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+      Decimal to Binary <br />
+      Converter
+    </h1>
+    <section class="input-container">
+      <label for="number-input">Enter a decimal number:</label>
+      <input
+        value=""
+        type="number"
+        name="decimal number input"
+        id="number-input"
+        class="number-input"
+      />
+      <button class="convert-btn" id="convert-btn">Convert</button>
+    </section>
+    <section class="output-container">
+      <output id="result" for="number-input"></output>
+      <h2>Calculation</h2>
+      <div id="animation-container">
+        <div class="calc-frame">
+            <div class="divisor">
+                <span class="calc-input"></span>
+                <hr>
+                <span>2</span>
+            </div>
+            <span>=</span>
+            <div class="divisor-result"><span class="calc-result"></span></div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
