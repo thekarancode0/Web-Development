@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background: red;
+    overflow-x: hidden;
+}
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 10px;
+    background-size: cover;
+    background-image: url("deadpool.png");
+    transition: background-image 0.5s ease-in-out; 
+}
+
+.sidebar{
+    height: 100vh;
+    width: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: .5s ease;
+    border: 1px solid rgba(255, 255, 255, 0.171);
+}
+.sidebar.view-this{
+    width: 140px;
+    z-index: 5;
+    transition: width 0.5s ease;
+}
+.sidebar .menu{
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    color:#fff
+}
+  
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar .nav-links{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    font-size: 1.1em;
+}
+
+.navbar .nav-links i{
+    transition: .1s all linear;
+}
+.navbar .nav-links:hover i,
+.navbar .nav-links:hover .nav-text
+{
+    color: black;
+}
+.navbar .nav-links .nav-text{
+    opacity: 0;
+    transition:  opacity .2s ease;
+}
+
+.sidebar.view-this .nav-links .nav-text{
+    opacity: 1;
+
+}
+.slider-btn{
+    background: none;
+    position: absolute;
+    bottom: 10%;
+    right: 60px;
+    font-size: 22px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.slider-btn i{
+    transition: .1s color;
+}
+
+.slider-btn:hover i{
+    color: whitesmoke ;
+}
