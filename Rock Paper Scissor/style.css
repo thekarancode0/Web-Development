@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02595f;
+    overflow: hidden;
+}
+h2{
+    position: absolute;
+    top: 50px;
+    font-size: 40px;
+    color: #05c7d4;
+    text-shadow: 5px 3px 5px black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    min-width:500px;
+    height: 400px;
+    border: 1px solid #2cbbc5;;
+    border-radius: 10px;
+    background-color: #04828b;
+    box-shadow: 10px 10px 15px black;
+}
+.png-Section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+    width: 100px;
+    cursor: pointer;
+}
+img:hover{
+    filter: (5px 5px 5px black);
+    -webkit-filter: drop-shadow(5px 5px 5px black);
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.result{
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.scoreBoard{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 20px;
+    color: white;
+}
