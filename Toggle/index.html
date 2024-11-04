@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        min-height: 100vh;
+        border: 2px solid;
+        padding: 40px;
+        transition: .3s all;
+    }
+    button{
+        margin-top: 20px;
+        position:relative;
+        left: 50%;
+        right: 50%;
+        translate: -50%;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+    }
+    body.dark-theme {
+  color: #eee;
+  background: #110f1b;
+}
+body.dark-theme a {
+  color: #809fff;
+}
+
+   </style>
+</head>
+<body  class="dark-theme || light-theme">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis, beatae dolorum, odit dolorem expedita rem laborum magni soluta, voluptatibus laboriosam officiis temporibus deleniti. Vero animi laborum corporis dolor facere, ullam, quidem harum dolorem tempore sed cumque et excepturi magni ad veniam perspiciatis explicabo incidunt ut architecto labore aliquam neque nemo possimus. Consectetur, iure rerum. Vero suscipit modi vitae et illo rerum ipsum id, tempore recusandae ab delectus quam explicabo reprehenderit accusamus quibusdam culpa esse quasi iusto asperiores consectetur eaque veniam saepe. Architecto, aliquid nostrum voluptas illum ex explicabo unde?</p>
+    <button class="btn-toggle">Toggle Dark Mode</button>
+
+
+    <script>
+        const btn = document.querySelector('.btn-toggle');
+        btn.addEventListener("click",function () {
+            document.body.classList.toggle('dark-theme');
+        })
+       
+    </script>
+</body>
+</html>
