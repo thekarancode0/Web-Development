@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2494c9;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    perspective: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.container .coin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    
+}
+.head,.tail{
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+
+.tail{
+    /* perspective: 300px; */
+    transform: rotateX(180deg);
+   
+}
+
+@keyframes tail-spin {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+    
+}
+
+@keyframes head-spin {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+    
+}
+
+.winner{
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 10rem;
+    letter-spacing: 50px;
+    opacity: .3;
+    z-index: -1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+}
