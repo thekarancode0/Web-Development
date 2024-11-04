@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    ::-webkit-scrollbar{ border-radius: 10px; }
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: url(https://plus.unsplash.com/premium_photo-1669323925724-bb87080d122d?q=80&w=1653&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 450px;
+    background-color: #fff;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    z-index: 100;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background:transparent;
+    padding: 10px;
+
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 16px;
+    transition: all .1s;
+}
+
+button:hover{
+    background: #fc4632;
+}
+
+.list-container{
+    z-index: 10;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 0;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
+@media (max-width:600px) {
+
+    .container{
+        align-items: start;
+        padding-top: 30px;
+    }
+
+    .todo-app{
+        width: 100%;
+        max-height: 400px;
+        overflow-y: scroll;
+        max-width: 550px;
+        background: #fff;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    
+    }
+    
+}
