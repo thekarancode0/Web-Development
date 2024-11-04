@@ -1,0 +1,214 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(15, 15, 15, 0.829);
+}
+.topnav{
+    width: 100%;
+    background-color: rgb(20, 22, 22);
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav_ul{
+    display: flex;
+    align-items: center;
+}
+
+.topnav_ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+.topnav_ul li a{
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: .1s all;
+}
+
+.topnav_ul li:hover a{
+    color: rgb(2, 63, 35);
+}
+.topnav .left{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+.topnav .middle{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav .right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 40px;
+    width: 33%;
+}
+/* .topnav .right h1{
+    font-size: 20px;
+    margin: 0 10px;
+} */
+.right #mailbox{
+    border: 1px solid white;
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color:white;
+    color: black;
+}
+.bottomnav{
+    width: 100%;
+    background-color: rgb(34, 32, 32);
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .1rem solid white;
+}
+
+.bottomnav div{
+    margin: auto;
+}
+.bottomnav a{
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.bottomnav div:hover a{
+    color:rgb(3, 112, 61);
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+    color: white;
+    margin-top: 50px;
+}
+.search input{
+    margin-top: 50px;
+    width: 700px;
+    height: 60px;
+    background:none;
+    border: 1px solid rgb(83, 82, 82);
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    color: white;
+    padding-left: 10px;
+}
+.search .boxex{
+    display: flex;
+    margin-top: 20px;
+}
+
+.boxex div{
+    border: 1px solid rgb(83, 82, 82);
+    width: 200px;
+    height: 25px;
+    margin: 0 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    text-align: center;
+    background-color: rgb(128, 124, 124);
+    font-weight: 600;
+    color: rgb(223, 220, 220);
+}
+
+.courses{
+    width: 100%;
+    background-color: rgba(31, 30, 30, 0.774);
+}
+
+.courses #text{
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.courses .row1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.row1 img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.row1 .row11, .row12, .row13{
+    overflow: hidden;
+    width:270px;
+    height: 400px;
+    margin: 0 35px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(12, 12, 15);
+}
+
+.row1 #inner-text{
+    margin-top: 20px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+
+.row1 p{
+    color: rgb(122, 121, 121);
+    padding: 10px;
+}
+.row1 #discount{
+    font-size:7px;
+    margin: 60px 10px;
+    background-color: rgb(238, 82, 10);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.row1 .enroll{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.enroll button{
+    color: rgb(2, 63, 35);
+    font-weight: 500;
+    background: none;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 45px;
+    width: 90px;
+}
+.btn1:hover{
+    background-color: rgb(2, 63, 35);
+    color: white;
+}
+
