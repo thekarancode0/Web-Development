@@ -1,0 +1,51 @@
+<!-- Write a program to print a random hexadecimal color code.
+Write a program to find second largest number in an array..
+Write a program to check if a give string is palindrome or not. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexa color Generator</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgba(0, 0, 0, 0.219);
+             border-radius: 5px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             font-weight: 600;
+             font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Hexa Color Generator</h3>
+    <div class="div">
+
+    </div>
+    <script>
+       let box = document.querySelector('.div');
+       
+       function changeColor(){
+           let randNum = Math.floor(Math.random() * 16777215);
+           let hexa = "#" + randNum.toString(16).padStart(6,0);
+           box.style.backgroundColor = hexa;
+           box.innerText = hexa;
+       };
+       
+       setInterval(changeColor,700);
+    </script>
+</body>
+</html>
